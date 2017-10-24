@@ -26,3 +26,26 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+#puzzle{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+}
+
+.cell{
+  border: 1px solid green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
