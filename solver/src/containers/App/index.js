@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import jsxToString from 'jsx-to-string';
+import stringify from 'jsx-stringify';
 import logo from './logo.svg';
 import './styles.css';
 
@@ -9,26 +11,158 @@ class App extends Component {
     super(props);
 
     this.state = {
-      row_0_cell_0 : null,
-      row_0_cell_1 : null,
-      row_0_cell_2 : null,
-      row_0_cell_3 : null,
-      row_0_cell_4 : null,
-      row_0_cell_5 : null,
-      row_0_cell_6 : null,
-      row_0_cell_7 : null,
-      row_0_cell_8 : null,
+      row_0_cell_0 : 0,
+      row_0_cell_1 : 0,
+      row_0_cell_2 : 0,
+      row_0_cell_3 : 0,
+      row_0_cell_4 : 0,
+      row_0_cell_5 : 0,
+      row_0_cell_6 : 0,
+      row_0_cell_7 : 0,
+      row_0_cell_8 : 0,
+      row_1_cell_0 : 0,
+      row_1_cell_1 : 0,
+      row_1_cell_2 : 0,
+      row_1_cell_3 : 0,
+      row_1_cell_4 : 0,
+      row_1_cell_5 : 0,
+      row_1_cell_6 : 0,
+      row_1_cell_7 : 0,
+      row_1_cell_8 : 0,
     };
   }
 
-  changeContent = (event) => {
-    let selectedCell;
-    let cellTarget = event.target
-    console.log(cellTarget)
-    console.log(typeof cellTarget)
-
+  changeContent00 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_0 : Number(event.target.value)
+    })
   }
+
+  changeContent01 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_1 : Number(event.target.value)
+    })
+  }
+
+  changeContent02 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_2 : Number(event.target.value)
+    })
+  }
+
+  changeContent03 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_3 : Number(event.target.value)
+    })
+  }
+
+  changeContent04 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_4 : Number(event.target.value)
+    })
+  }
+
+  changeContent05 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_5 : Number(event.target.value)
+    })
+  }
+
+  changeContent06 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_6 : Number(event.target.value)
+    })
+  }
+
+  changeContent07 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_7 : Number(event.target.value)
+    })
+  }
+
+  changeContent08 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_0_cell_8 : Number(event.target.value)
+    })
+  }
+
+    changeContent10 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_0 : Number(event.target.value)
+    })
+  }
+
+  changeContent11 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_1 : Number(event.target.value)
+    })
+  }
+
+  changeContent12 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_2 : Number(event.target.value)
+    })
+  }
+
+  changeContent13 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_3 : Number(event.target.value)
+    })
+  }
+
+  changeContent14 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_4 : Number(event.target.value)
+    })
+  }
+
+  changeContent15 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_5 : Number(event.target.value)
+    })
+  }
+
+  changeContent16 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_6 : Number(event.target.value)
+    })
+  }
+
+  changeContent17 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_7 : Number(event.target.value)
+    })
+  }
+
+  changeContent18 = (event, cell) => {
+    event.preventDefault()
+    this.setState({
+      row_1_cell_8 : Number(event.target.value)
+    })
+  }
+
+
+
+
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <header className="App-header">
@@ -40,270 +174,831 @@ class App extends Component {
         </p>
         <div id="puzzle">
           <div className="row">
-            <div className="cell" id="row_0_cell_0">
+            <div className="cell" id="row_0_cell_0" className="sectionOneTopLeft">
               <input
                 type = "number"
                 min = "1"
                 max = "9"
                 cell = "row_0_cell_0"
-                onChange ={this.changeContent}
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
                 />
             </div>
-            <div className="cell" id="01">
-              [0,1]
+            <div className="cell" id="row_0_cell_1" className = "sectionOneTop">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_1"
+                value = {this.state.row_0_cell_1}
+                onChange ={this.changeContent01}
+                />
             </div>
-            <div className="cell" id="02">
-              [0,2]
+            <div className="cell" id="row_0_cell_2" className="sectionOneTopRight" >
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_2"
+                value = {this.state.row_0_cell_2}
+                onChange ={this.changeContent02}
+                />
             </div>
-            <div className="cell" id="03">
-              [0,3]
+            <div className="cell" id="row_0_cell_3" className="sectionTwoTopLeft">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_3"
+                value = {this.state.row_0_cell_3}
+                onChange ={this.changeContent03}
+                />
             </div>
-            <div className="cell" id="04">
-              [0,4]
+            <div className="cell" id="row_0_cell_4" className="sectionTwoTop">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_4"
+                value = {this.state.row_0_cell_4}
+                onChange ={this.changeContent04}
+                />
             </div>
-            <div className="cell" id="05">
-              [0,5]
+            <div className="cell" id="row_0_cell_5" className="sectionTwoTopRight">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_5"
+                value = {this.state.row_0_cell_5}
+                onChange ={this.changeContent05}
+                />
             </div>
-            <div className="cell" id="06">
-              [0,6]
+            <div className="cell" id="row_0_cell_6" className="sectionThreeTopLeft">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_6"
+                value = {this.state.row_0_cell_6}
+                onChange ={this.changeContent06}
+                />
             </div>
-            <div className="cell" id="07">
-              [0,7]
+            <div className="cell" id="row_0_cell_7" className="sectionThreeTop">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_7"
+                value = {this.state.row_0_cell_7}
+                onChange ={this.changeContent07}
+                />
             </div>
-            <div className="cell" id="08">
-              [0,8]
+            <div className="cell" id="row_0_cell_8" className="sectionThreeTopRight">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_8"
+                value = {this.state.row_0_cell_8}
+                onChange ={this.changeContent08}
+                />
             </div>
           </div>
           <div className="row">
-            <div className="cell" id="10">
-              [1,0]
+            <div className="sectionOneLeft" id="row_1_cell_0">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_0"
+                value = {this.state.row_1_cell_0}
+                onChange ={this.changeContent10}
+                />
             </div>
-            <div className="cell" id="11">
-              [1,1]
+            <div className="cell" id="row_1_cell_1">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_1"
+                value = {this.state.row_1_cell_1}
+                onChange ={this.changeContent11}
+                />
             </div>
-            <div className="cell" id="12">
-              [1,2]
+            <div className="sectionOneRight" id="row_1_cell_2">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_2"
+                value = {this.state.row_1_cell_2}
+                onChange ={this.changeContent12}
+                />
             </div>
-            <div className="cell" id="13">
-              [1,3]
+            <div className="sectionTwoLeft" >
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_3"
+                value = {this.state.row_1_cell_3}
+                onChange ={this.changeContent13}
+                />
             </div>
-            <div className="cell" id="14">
-              [1,4]
+            <div className="cell" id="row_1_cell_4">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_4"
+                value = {this.state.row_1_cell_4}
+                onChange ={this.changeContent14}
+                />
             </div>
-            <div className="cell" id="15">
-              [1,5]
+            <div className="sectionTwoRight" id="row_1_cell_5">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_5"
+                value = {this.state.row_1_cell_5}
+                onChange ={this.changeContent15}
+                />
             </div>
-            <div className="cell" id="16">
-              [1,6]
+            <div className="sectionThreeLeft" id="row_1_cell_6">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_6"
+                value = {this.state.row_1_cell_6}
+                onChange ={this.changeContent16}
+                />
             </div>
-            <div className="cell" id="17">
-              [1,7]
+            <div className="cell" id="row_1_cell_7">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_7"
+                value = {this.state.row_1_cell_7}
+                onChange ={this.changeContent17}
+                />
             </div>
-            <div className="cell" id="18">
-              [1,8]
+            <div className="sectionThreeRight" id="row_1_cell_8">
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_1_cell_8"
+                value = {this.state.row_1_cell_8}
+                onChange ={this.changeContent18}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="20">
-              [2,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="21">
-              [2,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="22">
-              [2,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="23">
-              [2,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="24">
-              [2,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="25">
-              [2,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="26">
-              [2,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="27">
-              [2,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="28">
-              [2,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="30">
-              [3,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="31">
-              [3,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="32">
-              [3,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="33">
-              [3,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="34">
-              [3,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="35">
-              [3,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="36">
-              [3,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="37">
-              [3,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="38">
-              [3,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="40">
-              [4,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="41">
-              [4,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="42">
-              [4,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="43">
-              [4,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="44">
-              [4,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="45">
-              [4,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="46">
-              [4,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="47">
-              [4,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="48">
-              [4,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="50">
-              [5,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="51">
-              [5,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="52">
-              [5,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="53">
-              [5,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="54">
-              [5,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="55">
-              [5,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="56">
-              [5,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="57">
-              [5,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="58">
-              [5,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="60">
-              [6,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="61">
-              [6,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="62">
-              [6,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="63">
-              [6,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="64">
-              [6,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="65">
-              [6,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="66">
-              [6,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="67">
-              [6,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="68">
-              [6,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="70">
-              [7,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="71">
-              [7,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="72">
-              [7,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="73">
-              [7,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="74">
-              [7,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="75">
-              [7,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="76">
-              [7,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="77">
-              [7,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="78">
-              [7,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
           <div className="row">
             <div className="cell" id="80">
-              [8,0]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="81">
-              [8,1]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="82">
-              [8,2]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="83">
-              [8,3]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="84">
-              [8,4]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="85">
-              [8,5]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="86">
-              [8,6]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="87">
-              [8,7]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
             <div className="cell" id="88">
-              [8,8]
+              <input
+                type = "number"
+                min = "1"
+                max = "9"
+                cell = "row_0_cell_0"
+                value = {this.state.row_0_cell_0}
+                onChange ={this.changeContent00}
+                />
             </div>
           </div>
         </div>
