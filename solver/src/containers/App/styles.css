@@ -63,7 +63,6 @@
   height: 40px;
   display: flex;
   justify-content: center;
-
 }
 
 .sectionOneTopRight{
@@ -117,11 +116,6 @@
   justify-content: center;
 }
 
-
-
-
-
-
 .sectionTwoTopLeft{
   border-top: 5px purple solid;
   border-left: 5px purple solid;
@@ -165,6 +159,32 @@
 
 }
 
+.sectionTwoBottomLeft{
+  border-bottom: 5px purple solid;
+  border-left: 5px purple solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionTwoBottom{
+  border-bottom: 5px purple solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionTwoBottomRight{
+  border-bottom: 5px purple solid;
+  border-right: 5px purple solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .sectionThreeTopLeft{
   border-top: 5px red solid;
   border-left: 5px red solid;
@@ -206,3 +226,438 @@
   display: flex;
   justify-content: center;
 }
+
+.sectionThreeBottomLeft{
+  border-left: 5px solid red;
+  border-bottom: 5px solid red;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionThreeBottom{
+  border-bottom: 5px solid red;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionThreeBottomRight{
+  border-right: 5px solid red;
+  border-bottom: 5px solid red;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourTopLeft{
+  border-left: 5px solid green;
+  border-top: 5px solid green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourTop{
+  border-top: 5px solid green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourTopRight{
+  border-right: 5px solid green;
+  border-top: 5px solid green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourLeft{
+  border-left: 5px solid green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourRight{
+  border-right: 5px solid green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourBottomLeft{
+  border-bottom: 5px green solid;
+  border-left: 5px green solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourBottom{
+  border-bottom: 5px green solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourBottomRight{
+  border-bottom: 5px green solid;
+  border-right: 5px green solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveTopLeft{
+  border-left: 5px solid yellow;
+  border-top: 5px solid yellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveTop{
+  border-top: 5px solid yellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveTopRight{
+  border-right: 5px solid yellow;
+  border-top: 5px solid yellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveLeft{
+  border-left: 5px solid yellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveRight{
+  border-right: 5px solid yellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveBottomLeft{
+  border-bottom: 5px yellow solid;
+  border-left: 5px yellow solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveBottom{
+  border-bottom: 5px yellow solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFiveBottomRight{
+  border-bottom: 5px yellow solid;
+  border-right: 5px yellow solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixTopLeft{
+  border-left: 5px solid brown;
+  border-top: 5px solid brown;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixTop{
+  border-top: 5px solid brown;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixTopRight{
+  border-right: 5px solid brown;
+  border-top: 5px solid brown;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixLeft{
+  border-left: 5px solid brown;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixRight{
+  border-right: 5px solid brown;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixBottomLeft{
+  border-bottom: 5px brown solid;
+  border-left: 5px brown solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixBottom{
+  border-bottom: 5px brown solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSixBottomRight{
+  border-bottom: 5px brown solid;
+  border-right: 5px brown solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenTopRight{
+  border-right: 5px blue solid;
+  border-top: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenTopLeft{
+  border-left: 5px blue solid;
+  border-top: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenTop{
+  border-top: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenLeft{
+  border-left: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenRight{
+  border-right: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenBottomLeft{
+  border-bottom: 5px blue solid;
+  border-left: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenBottom{
+  border-bottom: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionSevenBottomRight{
+  border-bottom: 5px blue solid;
+  border-right: 5px blue solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightTopRight{
+  border-right: 5px pink solid;
+  border-top: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightTopLeft{
+  border-left: 5px pink solid;
+  border-top: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightTop{
+  border-top: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightLeft{
+  border-left: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightRight{
+  border-right: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightBottomLeft{
+  border-bottom: 5px pink solid;
+  border-left: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightBottom{
+  border-bottom: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionEightBottomRight{
+  border-bottom: 5px pink solid;
+  border-right: 5px pink solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineTopRight{
+  border-right: 5px teal solid;
+  border-top: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineTopLeft{
+  border-left: 5px teal solid;
+  border-top: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineTop{
+  border-top: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineLeft{
+  border-left: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineRight{
+  border-right: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineBottomLeft{
+  border-bottom: 5px teal solid;
+  border-left: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineBottom{
+  border-bottom: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionNineBottomRight{
+  border-bottom: 5px teal solid;
+  border-right: 5px teal solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
