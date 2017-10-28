@@ -11,87 +11,87 @@ class App extends Component {
     super(props);
 
     this.state = {
-      row_0_cell_0 : null,
-      row_0_cell_1 : null,
-      row_0_cell_2 : null,
-      row_0_cell_3 : null,
-      row_0_cell_4 : null,
-      row_0_cell_5 : null,
-      row_0_cell_6 : null,
-      row_0_cell_7 : null,
-      row_0_cell_8 : null,
-      row_1_cell_0 : null,
-      row_1_cell_1 : null,
-      row_1_cell_2 : null,
-      row_1_cell_3 : null,
-      row_1_cell_4 : null,
-      row_1_cell_5 : null,
-      row_1_cell_6 : null,
-      row_1_cell_7 : null,
-      row_1_cell_8 : null,
-      row_2_cell_0 : null,
-      row_2_cell_1 : null,
-      row_2_cell_2 : null,
-      row_2_cell_3 : null,
-      row_2_cell_4 : null,
-      row_2_cell_5 : null,
-      row_2_cell_6 : null,
-      row_2_cell_7 : null,
-      row_2_cell_8 : null,
-      row_3_cell_0 : null,
-      row_3_cell_1 : null,
-      row_3_cell_2 : null,
-      row_3_cell_3 : null,
-      row_3_cell_4 : null,
-      row_3_cell_5 : null,
-      row_3_cell_6 : null,
-      row_3_cell_7 : null,
-      row_3_cell_8 : null,
-      row_4_cell_0 : null,
-      row_4_cell_1 : null,
-      row_4_cell_2 : null,
-      row_4_cell_3 : null,
-      row_4_cell_4 : null,
-      row_4_cell_5 : null,
-      row_4_cell_6 : null,
-      row_4_cell_7 : null,
-      row_4_cell_8 : null,
-      row_5_cell_0 : null,
-      row_5_cell_1 : null,
-      row_5_cell_2 : null,
-      row_5_cell_3 : null,
-      row_5_cell_4 : null,
-      row_5_cell_5 : null,
-      row_5_cell_6 : null,
-      row_5_cell_7 : null,
-      row_5_cell_8 : null,
-      row_6_cell_0 : null,
-      row_6_cell_1 : null,
-      row_6_cell_2 : null,
-      row_6_cell_3 : null,
-      row_6_cell_4 : null,
-      row_6_cell_5 : null,
-      row_6_cell_6 : null,
-      row_6_cell_7 : null,
-      row_6_cell_8 : null,
-      row_7_cell_0 : null,
-      row_7_cell_1 : null,
-      row_7_cell_2 : null,
-      row_7_cell_3 : null,
-      row_7_cell_4 : null,
-      row_7_cell_5 : null,
-      row_7_cell_6 : null,
-      row_7_cell_7 : null,
-      row_7_cell_8 : null,
-      row_8_cell_0 : null,
-      row_8_cell_1 : null,
-      row_8_cell_2 : null,
-      row_8_cell_3 : null,
-      row_8_cell_4 : null,
-      row_8_cell_5 : null,
-      row_8_cell_6 : null,
-      row_8_cell_7 : null,
-      row_8_cell_8 : null,
+      row_0_cell_0 : 0,
+      row_0_cell_1 : 0,
+      row_0_cell_2 : 0,
+      row_0_cell_3 : 0,
+      row_0_cell_4 : 0,
+      row_0_cell_5 : 0,
+      row_0_cell_6 : 0,
+      row_0_cell_7 : 0,
+      row_0_cell_8 : 0,
+      row_1_cell_0 : 0,
+      row_1_cell_1 : 0,
+      row_1_cell_2 : 0,
+      row_1_cell_3 : 0,
+      row_1_cell_4 : 0,
+      row_1_cell_5 : 0,
+      row_1_cell_6 : 0,
+      row_1_cell_7 : 0,
+      row_1_cell_8 : 0,
+      row_2_cell_0 : 0,
+      row_2_cell_1 : 0,
+      row_2_cell_2 : 0,
+      row_2_cell_3 : 0,
+      row_2_cell_4 : 0,
+      row_2_cell_5 : 0,
+      row_2_cell_6 : 0,
+      row_2_cell_7 : 0,
+      row_2_cell_8 : 0,
+      row_3_cell_0 : 0,
+      row_3_cell_1 : 0,
+      row_3_cell_2 : 0,
+      row_3_cell_3 : 0,
+      row_3_cell_4 : 0,
+      row_3_cell_5 : 0,
+      row_3_cell_6 : 0,
+      row_3_cell_7 : 0,
+      row_3_cell_8 : 0,
+      row_4_cell_0 : 0,
+      row_4_cell_1 : 0,
+      row_4_cell_2 : 0,
+      row_4_cell_3 : 0,
+      row_4_cell_4 : 0,
+      row_4_cell_5 : 0,
+      row_4_cell_6 : 0,
+      row_4_cell_7 : 0,
+      row_4_cell_8 : 0,
+      row_5_cell_0 : 0,
+      row_5_cell_1 : 0,
+      row_5_cell_2 : 0,
+      row_5_cell_3 : 0,
+      row_5_cell_4 : 0,
+      row_5_cell_5 : 0,
+      row_5_cell_6 : 0,
+      row_5_cell_7 : 0,
+      row_5_cell_8 : 0,
+      row_6_cell_0 : 0,
+      row_6_cell_1 : 0,
+      row_6_cell_2 : 0,
+      row_6_cell_3 : 0,
+      row_6_cell_4 : 0,
+      row_6_cell_5 : 0,
+      row_6_cell_6 : 0,
+      row_6_cell_7 : 0,
+      row_6_cell_8 : 0,
+      row_7_cell_0 : 0,
+      row_7_cell_1 : 0,
+      row_7_cell_2 : 0,
+      row_7_cell_3 : 0,
+      row_7_cell_4 : 0,
+      row_7_cell_5 : 0,
+      row_7_cell_6 : 0,
+      row_7_cell_7 : 0,
+      row_7_cell_8 : 0,
+      row_8_cell_0 : 0,
+      row_8_cell_1 : 0,
+      row_8_cell_2 : 0,
+      row_8_cell_3 : 0,
+      row_8_cell_4 : 0,
+      row_8_cell_5 : 0,
+      row_8_cell_6 : 0,
+      row_8_cell_7 : 0,
+      row_8_cell_8 : 0,
     };
   }
 
@@ -662,6 +662,34 @@ class App extends Component {
     })
   }
 
+  solve = () => {
+    fetch('/api/solve', {
+      method: "POST",
+      credentials: "include",
+      headers:
+        {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body : JSON.stringify(
+          [
+          [this.state.row_0_cell_0, this.state.row_0_cell_1, this.state.row_0_cell_2, this.state.row_0_cell_3, this.state.row_0_cell_4, this.state.row_0_cell_5, this.state.row_0_cell_6, this.state.row_0_cell_7, this.state.row_0_cell_8],
+          [this.state.row_1_cell_0, this.state.row_1_cell_1, this.state.row_1_cell_2, this.state.row_1_cell_3, this.state.row_1_cell_4, this.state.row_1_cell_5, this.state.row_1_cell_6, this.state.row_1_cell_7, this.state.row_1_cell_8],
+          [this.state.row_2_cell_0, this.state.row_2_cell_1, this.state.row_2_cell_2, this.state.row_2_cell_3, this.state.row_2_cell_4, this.state.row_2_cell_5, this.state.row_2_cell_6, this.state.row_2_cell_7, this.state.row_2_cell_8],
+          [this.state.row_3_cell_0, this.state.row_3_cell_1, this.state.row_3_cell_2, this.state.row_3_cell_3, this.state.row_3_cell_4, this.state.row_3_cell_5, this.state.row_3_cell_6, this.state.row_3_cell_7, this.state.row_3_cell_8],
+          [this.state.row_4_cell_0, this.state.row_4_cell_1, this.state.row_4_cell_2, this.state.row_4_cell_3, this.state.row_4_cell_4, this.state.row_4_cell_5, this.state.row_4_cell_6, this.state.row_4_cell_7, this.state.row_4_cell_8],
+          [this.state.row_5_cell_0, this.state.row_5_cell_1, this.state.row_5_cell_2, this.state.row_5_cell_3, this.state.row_5_cell_4, this.state.row_5_cell_5, this.state.row_5_cell_6, this.state.row_5_cell_7, this.state.row_5_cell_8],
+          [this.state.row_6_cell_0, this.state.row_6_cell_1, this.state.row_6_cell_2, this.state.row_6_cell_3, this.state.row_6_cell_4, this.state.row_6_cell_5, this.state.row_6_cell_6, this.state.row_6_cell_7, this.state.row_6_cell_8],
+          [this.state.row_7_cell_0, this.state.row_7_cell_1, this.state.row_7_cell_2, this.state.row_7_cell_3, this.state.row_7_cell_4, this.state.row_7_cell_5, this.state.row_7_cell_6, this.state.row_7_cell_7, this.state.row_7_cell_8],
+          [this.state.row_8_cell_0, this.state.row_8_cell_1, this.state.row_8_cell_2, this.state.row_8_cell_3, this.state.row_8_cell_4, this.state.row_8_cell_5, this.state.row_8_cell_6, this.state.row_8_cell_7, this.state.row_8_cell_8],
+          ]
+          )
+    }).then((response) =>{
+      return response.json()
+    }).then((values) =>{
+      this.loadNewValues(values)
+    })
+  }
 
 
   render() {
@@ -1173,7 +1201,7 @@ class App extends Component {
                 min = "1"
                 max = "9"
                 cell = "row_0_cell_0"
-                value = {this.state.row_53_cell_53}
+                value = {this.state.row_5_cell_3}
                 onChange ={this.changeContent53}
                 />
             </div>
@@ -1504,6 +1532,9 @@ class App extends Component {
                 />
             </div>
           </div>
+        </div>
+        <div id="solver">
+          <button onClick={this.solve}> SOLVE</button>
         </div>
       </div>
     );
